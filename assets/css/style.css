@@ -1,0 +1,146 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #fff;
+    background-attachment: fixed;
+    background-position: center center;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+}
+
+.wrapper {
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.login-container {
+    position: relative;
+    max-width: 720px;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.from-wrapper {
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px 30px 30px 40px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #666;
+    position: relative;
+    z-index: 10;
+}
+
+.form .form-group {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.form .form-control {
+    background: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    border-bottom: 2px solid;
+    border-radius: 0px;
+    font-size: 16px;
+    padding: 10px;
+    height: 45px;
+}
+
+.form-group i {
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    font-size: 18px;
+}
+
+.form .form-control+label {
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    font-size: 12px;
+    color: #999;
+    transition: all 450ms;
+    font-weight: 400;
+    width: 100%;
+}
+
+.form .form-control:valid+label,
+.form .form-control:focus+label {
+    font-size: 14px;
+    color: #eb84db;
+    bottom: 35px;
+    left: 0;
+
+
+}
+
+.form .form-control:valid+label>i,
+.form .form-control:focus+label>i {
+    bottom: -35px;
+
+}
+
+.form .form-control:valid,
+.form .form-control:focus {
+    border-color: #eb84db;
+}
+
+.info-container {
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: 45%;
+    right: 10%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #9977ce;
+    z-index: 0;
+    padding: 40px;
+    box-shadow: 0px 0px 5px #666;
+
+}
+
+.form h2 {
+    background: -webkit-linear-gradient(#87a2f1, #eb84db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form .btn-primary {
+    border-radius: 25px;
+    border: none;
+    min-width: 120px;
+    height: auto;
+    padding: 10px;
+    outline: none;
+}
+
+.grad-bg {
+    color: #fff;
+    background: rgb(122, 167, 244);
+    background: -moz-linear-gradient(135deg, rgba(122, 167, 244, 1) 0%, rgba(240, 131, 218, 1) 100%);
+    background: -webkit-linear-gradient(135deg, rgba(122, 167, 244, 1) 0%, rgba(240, 131, 218, 1) 100%);
+    background: linear-gradient(135deg, rgba(122, 167, 244, 1) 0%, rgba(240, 131, 218, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7aa7f4", endColorstr="#f083da", GradientType=1);
+}
+
+.man-icon {
+    display: inline-block;
+    padding: 12px 0;
+    border-radius: 50%;
+    border: 2px solid;
+    height: 70px;
+    width: 70px;
+    font-size: 32px;
+}
+
+@media all and (max-width:400px){
+    .info-container {
+        top: 95%;
+        bottom: auto;
+        left: 10%;
+        border-bottom-left-radius: 10px;
+        padding: 30px 10px 10px;
+    }
+}
